@@ -2,18 +2,22 @@
 
 [gostbox.com](https://github.com/mjosaarinen/pi86/blob/main/gostbox.com)
 is a 95-byte DOS program for generating the 256-byte GOST
-Standard S-BOX used in Hash Function "Streebog" ( GOST R 34.11-2012,
+Standard S-BOX used in Hash Function "**Streebog**" ( GOST R 34.11-2012,
 [RFC 6986](https://tools.ietf.org/html/rfc6986#section-6.2) )
-and Block Cipher "Kuznyechik" ( GOST R 34.12-2015,
+and Block Cipher "**Kuznyechik**" ( GOST R 34.12-2015,
 [RFC 7801](https://tools.ietf.org/html/rfc7801#section-4.1) ).
-Note that the "old" DES-rival GOST cipher is still alive, nowadays called
-"Magma" (which was apparently a code name used for it in the KGB days).
+
+![gostbox](https://user-images.githubusercontent.com/6192929/107245225-d03ea500-6a26-11eb-9d54-8bc707cb17ff.png)
+
+Note that the "old" DES-rival 64-bit GOST cipher is still alive, nowadays
+called "Magma" (one of its original KGB code names, apparently).
 Streebog and Kuznyechik are unrelated to it.
+
 
 ##  Why? About the S-Box
 
 The actual design process of the Russian S-Boxes has not been published.
-The decomposition used here is based on the ``TKLog'' representation
+The decomposition used here is based on the **TKLog** representation
 derived (reverse engineered) by Léo Perrin:
 [Partitions in the S-Box of Streebog and Kuznyechik](https://doi.org/10.13154/tosc.v2019.i1.302-329)
 IACR Transactions on Symmetric Cryptology, 2019(1), 302–329, 2019.
