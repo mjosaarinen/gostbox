@@ -80,15 +80,12 @@ gcc -Wall -Wextra -O2 -g -c tklog.c -o tklog.o
 nasm -f bin gostbox.asm -o gostbox.com  
 gcc -Wall -Wextra -O2 -g -o xtest tklog.o 
 ````
-
-To run it, just pipe/redirect (DOS `>`) output to a file.
 ```console
 $ dosbox gostbox.com
 ```
-
 Will spawn a new window and execute the program, producing gibberish.
 You can redirect it to a file for comparison with `sbox256.dat`
-```console
+```
 C:\>gostbox > my.box
 C:\>exit
 ```
