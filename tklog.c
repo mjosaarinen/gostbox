@@ -1,5 +1,5 @@
 //	tklog.c
-//	2021-02-02	Markku-Juhani O. Saarinen <mjos@pqshield.com>
+//	2021-02-02	Markku-Juhani O. Saarinen <mjos@mjos.fi>
 //	Copyright (c) 2021, PQShield Ltd. All rights reserved.
 
 //	Decompositions of Streebog/Kuznyechik S-Box (research code snippets)
