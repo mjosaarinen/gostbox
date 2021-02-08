@@ -90,7 +90,7 @@ C:\>gostbox > my.box
 C:\>exit
 ```
 
-Now you shoold have a file `MY.BOX` (note the case) back on local machine
+Now you should have a file `MY.BOX` (note the case) back on local machine
 which you can verify:
 ```console
 $ cmp MY.BOX sbox256.dat 
@@ -110,9 +110,9 @@ In case of the Streebog/Kuznyechik S-Box, in 56/256 = 21.9% of cases we
 have d = 0x12 and in 34/256 = 13.2% cases d = 0x34. AES has no "d" value
 more than 3/256 times, while for SM4 the maximum is 4/256.
 
-This does not mean that Streebog or Kuznyechik are broken, but it
-simply that the S-Boxes do not benefit from protection against algebraic
-attacks that a random S-Box was supposed to give them.
+This does not mean that Streebog or Kuznyechik are broken, but simply
+that the S-Boxes do not benefit from protection against algebraic
+attacks that a random S-Box would have given them.
 
 The [tklog.c](tklog.c) code tests two decompositions of the S-Box and
 prints the rot-differential table out as well.
