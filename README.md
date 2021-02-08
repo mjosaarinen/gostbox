@@ -46,7 +46,7 @@ algorithms were known from the outset to be based on finite field inversion
 ([Nyberg's S-Boxes](https://doi.org/10.1007/3-540-48285-7_6) provide
 good resistance against differential and linear cryptanalysis).
 Pseudo-randomness has never been claimed for these, and various compact
-representations are possible, thanks to clear their algebraic structure.
+representations are possible, thanks to their clear algebraic structure.
 In fact, one can convert one to another and implement
 [SM4 using AES instructions](https://github.com/mjosaarinen/sm4ni)
 for speed and resistance against timing attacks.
