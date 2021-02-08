@@ -18,20 +18,21 @@ Streebog and Kuznyechik are unrelated to it.
 
 The actual design process of the Russian S-Boxes has not been published.
 The decomposition used here is based on the **TKLog** representation
-derived (reverse engineered) by Léo Perrin:
-[Partitions in the S-Box of Streebog and Kuznyechik](https://doi.org/10.13154/tosc.v2019.i1.302-329)
+derived (reverse engineered) by Léo Perrin: 
+"[Partitions in the S-Box of Streebog and Kuznyechik](https://doi.org/10.13154/tosc.v2019.i1.302-329)."
 IACR Transactions on Symmetric Cryptology, 2019(1), 302–329, 2019.
 
 Russian [TK26](https://tc26.ru/) cryptographers have
-[reported](https://cdn.virgilsecurity.com/assets/docs/memo-on-kuznyechik-s-box.pdf)
+[claimed](https://cdn.virgilsecurity.com/assets/docs/memo-on-kuznyechik-s-box.pdf)
 and
 [maintained](https://cdn.virgilsecurity.com/assets/docs/meeting-report-for-the-discussion-on-kuznyechik-and-streebog.pdf)
 that a pseudo-random process was used during design and that the S-Box
 has no secret structure.
 
-One can take "pseudo-random" to mean many things, but the fact that a
-program of about 1/3 of the size of the S-Box can generate it shows that
-it cannot be random. While 8086/DOS is obviously a suboptimal encoding,
+One can take "pseudo-random" to mean many things, but the fact that there's
+a much smaller generating program for the S-Box shows that it cannot be
+randomly selected without structure -- even if some filtering was done for
+cryptanalytic properties.  While 8086/DOS is obviously a suboptimal encoding,
 it is not an artificial "language" and is certainly devoid of any advanced
 features. One can see this as an application of the relation of
 [program-size complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity)
@@ -54,11 +55,12 @@ for speed and resistance against timing attacks.
 ##  Source Code
 
 I usually write assembler code for RISC-V and ARM targets, but the good old
-8086 of original IBM PCs had an amazing code density and backward
-compatibility with 8-bit [8080](https://en.wikipedia.org/wiki/Intel_8080)
-from 1974. This 8/16-bit code runs out-of-box on Microsoft operating
+8086 of original IBM PCs had a very high code density comparable to 8-bit
+CPUs (due to its backward compatibility with
+[8080](https://en.wikipedia.org/wiki/Intel_8080) from 1974). 
+This 8/16-bit code runs out-of-box on Microsoft operating
 systems up to about Windows XP, but nowadays with 64-bit Windows and Linux
-targets I'd recommend [dosbox](https://www.dosbox.com/).
+targets I'd recommend using [dosbox](https://www.dosbox.com/).
 
 The file [gostbox.asm](gostbox.asm) contains NASM (16-bit) assembler source
 for the DOS executable
