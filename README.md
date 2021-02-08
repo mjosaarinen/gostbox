@@ -84,13 +84,14 @@ gcc -Wall -Wextra -O2 -g -o xtest tklog.o
 To run it, just pipe/redirect (DOS `>`) output to a file.
 ```console
 $ dosbox gostbox.com
-```console
+```
+
 Will spawn a new window and execute the program, producing gibberish.
 You can redirect it to a file for comparison with `sbox256.dat`
 ```console
 C:\>gostbox > my.box
 C:\>exit
-```console
+```
 
 Now you shoold have a file `MY.BOX` (note the case) back on local machine
 which you can verify:
