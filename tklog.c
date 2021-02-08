@@ -173,7 +173,7 @@ int main()
 	gostbox();
 	tklog();
 
-	printf("\nRotational differentials	S[x) ^ S[x <<< 1]:\n");
+	printf("\nRotational differentials   S(x) ^ S(x <<< 1):\n");
 	rol_diff(gost_pi);
 
 	return 0;

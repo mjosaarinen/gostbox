@@ -122,7 +122,7 @@ $ ./xtest
 gostbox distance = 0
 tklog distance = 0
 
-Rotational differentials	S[x) ^ S[x <<< 1]:
+Rotational differentials   S(x) ^ S(x <<< 1):
  00 33 12 20 34 94 12 12 12 34 69 43 34 34 10 12
  10 12 12 34 12 12 12 34 12 34 12 34 12 20 20 12
  12 34 8F 12 10 34 12 EF 34 12 34 34 34 12 12 12
