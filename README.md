@@ -1,5 +1,7 @@
 #   GOSTBOX -- A 95-byte program for the 256-byte Streebog/Kuznyechik S-Box.
 
+2021-Feb-07  Markku-Juhani O. Saarinen <mjos@mjos.fi>
+
 [gostbox.com](https://github.com/mjosaarinen/pi86/blob/main/gostbox.com)
 is a 95-byte DOS program for generating the 256-byte GOST
 Standard S-BOX used in Hash Function "**Streebog**" ( GOST R 34.11-2012,
